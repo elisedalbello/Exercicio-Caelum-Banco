@@ -1,3 +1,4 @@
+package bean;
 
 public class Departamento {
 	int codigo_departamento;

@@ -1,3 +1,4 @@
+import bean.Gerente;
 
 public class TestaGerente {
 

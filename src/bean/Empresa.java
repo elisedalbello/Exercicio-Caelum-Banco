@@ -1,3 +1,4 @@
+package bean;
 
 public class Empresa {
 	Funcionario[] empregados;

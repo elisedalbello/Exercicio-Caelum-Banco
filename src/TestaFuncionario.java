@@ -1,3 +1,4 @@
+import bean.Funcionario;
 
 public class TestaFuncionario {
 	

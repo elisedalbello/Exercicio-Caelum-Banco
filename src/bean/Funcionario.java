@@ -1,3 +1,4 @@
+package bean;
 
 public class Funcionario {
 	private int codigoDepartamento;
@@ -53,13 +54,13 @@ public class Funcionario {
 		this.rg = rg;
 	}
 	
-	void recebeAumento(double quantidade){
+	public void recebeAumento(double quantidade){
 		double novoSalario;
 		novoSalario = this.salario + quantidade;
 		salario = novoSalario;
 	}
 	
-	double calculaGanhoAnual(){
+	public double calculaGanhoAnual(){
 		double valor;
 		valor = this.salario * 12;
 		return valor;

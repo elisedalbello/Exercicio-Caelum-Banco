@@ -1,7 +1,8 @@
+package bean;
 
 public class Gerente extends Funcionario{
 	private int senha;
-	private int nrFuncionariosGerenciados;
+	//private int nrFuncionariosGerenciados;
 	
 	public int getSenha(){
 		return this.senha;
