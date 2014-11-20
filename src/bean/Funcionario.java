@@ -1,68 +1,70 @@
 package bean;
 
-public class Funcionario {
+abstract class Funcionario {
 	private int codigoDepartamento;
-	private double salario;
+	protected double salario;
 	public String nomeFuncionario;
 	private String dataAdmissao;
 	private String rg;
-	
-	public Funcionario(){
+
+	public Funcionario() {
 	}
-	
-	public Funcionario(String nomeFuncionario){
+
+	protected Funcionario(String nomeFuncionario) {
 		this.nomeFuncionario = nomeFuncionario;
 	}
-	
-	public int getCodigoDepartamento(){
+
+	public int getCodigoDepartamento() {
 		return this.codigoDepartamento;
 	}
-	
-	public void setCodigoDepartamento(int codigo_departamento){
+
+	public void setCodigoDepartamento(int codigo_departamento) {
 		this.codigoDepartamento = codigo_departamento;
 	}
-	
-	public double getSalario(){
+
+	public double getSalario() {
 		return this.salario;
 	}
-	
-	public void setSalario(double salario){
+
+	public void setSalario(double salario) {
 		this.salario = salario;
 	}
-	
-	public String getNomeFuncionario(){
+
+	public String getNomeFuncionario() {
 		return this.nomeFuncionario;
 	}
-	
-	public void setNomeFuncionario(String nome_funcionario){
+
+	public void setNomeFuncionario(String nome_funcionario) {
 		this.nomeFuncionario = nome_funcionario;
 	}
-	
-	public String getDataAdmissao(){
+
+	public String getDataAdmissao() {
 		return this.dataAdmissao;
 	}
-	
-	public void setDataAdmissao(String data_admissao){
+
+	public void setDataAdmissao(String data_admissao) {
 		this.dataAdmissao = data_admissao;
 	}
-	
-	public String getRG(){
+
+	public String getRG() {
 		return this.rg;
 	}
-	
-	public void setRG(String rg){
+
+	public void setRG(String rg) {
 		this.rg = rg;
 	}
-	
-	public void recebeAumento(double quantidade){
+
+	public void recebeAumento(double quantidade) {
 		double novoSalario;
 		novoSalario = this.salario + quantidade;
 		salario = novoSalario;
 	}
-	
-	public double calculaGanhoAnual(){
+
+	public double calculaGanhoAnual() {
 		double valor;
 		valor = this.salario * 12;
 		return valor;
 	}
+	
+	abstract double getBonificacao();
 }
